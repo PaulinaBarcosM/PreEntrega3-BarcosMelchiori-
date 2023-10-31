@@ -1,0 +1,21 @@
+// Para los h1 del header
+@mixin positionH1 ($fs, $fsz, $pd){
+    font-style: $fs;
+    font-size: $fsz;
+    padding: $pd;
+}
+
+// para el id del body
+@mixin photos2 ($d, $fw, $jc, $g){
+    display: $d;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    gap: $g;
+}
+
+@mixin bodyurban ($fw, $bc){
+    font-weight: $fw;
+    background-color: $bc;
+}
+
+

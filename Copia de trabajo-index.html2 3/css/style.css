@@ -1,0 +1,131 @@
+footer ul li, main .longin_h4, main .longin_h3, main p, main h2, header nav ul li, header h1 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 300;
+  color: white;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+  bottom: 40px;
+  left: 600px;
+}
+
+header nav ul li a {
+  padding: 0 20px;
+  margin: 0 20px;
+  color: white;
+}
+
+footer ul li a {
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  top: 1150px;
+  left: 1100px;
+}
+
+main .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main .longin_h3 {
+  font-size: 25px;
+  margin: 15px 1200px 25px 0;
+  padding: 4px 0 4px 25px;
+  border: 3px solid white;
+}
+
+main .longin_h4 {
+  border: 3px solid white;
+  padding: 5px 0 5px 0;
+  margin: 100px 600px 100px 600px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#photos2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+#body_index {
+  color: white;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1800px;
+}
+
+#body_pary {
+  color: white;
+  background-image: url();
+  background-color: black;
+}
+
+#body_urban {
+  font-weight: 300;
+  background-color: black;
+  font-family: "Bodoni Moda", serif;
+}
+
+#body_classic {
+  font-weight: 300;
+  background-color: black;
+  font-family: "Bodoni Moda", serif;
+}
+
+#body_longin {
+  color: white;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2500px;
+}
+
+#main_longin {
+  margin: 70px 0 0 15px;
+}
+
+header h1 {
+  font-style: italic;
+  font-size: 50px;
+  padding: 10px 20px;
+}
+header nav ul {
+  list-style: center;
+}
+main h2 {
+  text-align: center;
+  margin: 200px 0 700px 0;
+}
+main p {
+  text-align: center;
+}
+main .paryParrafo {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+main img {
+  width: 400px;
+  height: 500px;
+}
+main .longin_h4 {
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

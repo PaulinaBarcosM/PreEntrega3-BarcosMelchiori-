@@ -1,0 +1,117 @@
+// Inicio barra de navegación
+*{
+    padding: $padd-inicio;
+    margin: $marg-inicio;
+}
+
+#photos2{
+    @include photos2 (flex, wrap, space-evenly, 10px)
+}
+#body_index{
+    color: map-get($body_index, color ); 
+    background-image: url();
+    background-repeat: map-get($body_index, back-repeat );
+    background-position: map-get($body_index, back-position );
+    background-size: map-get($body_index, back-size );
+    height: map-get($body_index, heig-ht );
+
+}
+#body_pary{
+    color: map-get($body_index, color );
+    background-image: url();
+    background-color: black;
+}
+#body_urban{
+    @include bodyurban (300, black);
+    font-family: $ff-bodyurban;
+}
+#body_classic{
+    @include bodyurban (300, black);
+    font-family: $ff-bodyurban;
+}
+#body_longin{
+    color: map-get($body_index, color );
+    background-image: url();
+    background-repeat: map-get($body_index, back-repeat );
+    background-size: map-get($body_index, back-size );
+    height: 2500px;
+}
+#main_longin{
+    margin: 70px 0 0 15px;
+}
+
+
+header{
+        h1{
+           @extend %tipografia;
+           @include positionH1 (italic, 50px, 10px 20px);
+        }
+        nav{
+            ul{
+                list-style: $ol-ul;
+                li{
+                    @extend %tipografia;
+                    @extend %disposicion;
+                    a{
+                        @extend %disposicionEncordsHeader;
+                    }
+                }
+            }
+    
+        }
+    }
+    // Fin barra de navegación
+    
+    // Inicio contenido principal
+    main{
+        h2{
+            @extend %tipografia;
+            text-align: map-get($index-main, texto);
+            margin: map-get($index-main, margen1in )
+        }
+        p{
+            @extend %tipografia;
+            text-align: map-get($index-main, texto );
+        }
+        .photos{
+            @extend %photos;
+        }
+        .paryParrafo{
+            font-size: map-get($pary-parrafo, textosize );
+            margin: map-get($pary-parrafo, margen );
+            text-align: map-get($pary-parrafo, textoalign );
+        }
+        img{
+            width: $wid-img;
+            height: $heig-img;
+        }
+        .longin_h3{
+            @extend %longin_h3;
+            @extend %tipografia;
+        }
+        .longin_h4{
+            @extend %longin_h4;
+            @extend %tipografia;
+            text-align: center
+        }
+    }
+    // Fin contenido principal
+    
+    // Inicio pie de página
+    footer{
+        ul{
+            li{
+                @extend %tipografia;
+                // disposicion de los list-items
+                display: $dis-footer;
+                a{
+                    @extend %disposicionEncordsFooter;
+                }
+            }
+        }
+}
+
+
+
+
+
